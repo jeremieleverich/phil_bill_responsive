@@ -1,0 +1,24 @@
+; ----------------------------------------
+;
+; AICC Course Interchange File.
+;
+;
+; ----------------------------------------
+
+[Course]
+  Course_Creator = Sublime Media
+  Course_ID = y_globalization_ess
+  Course_System = HTML
+  Course_Title = Yahoo! Globalization Essentials
+  Level = 1
+  Max_Fields_CST = 1
+  Total_AUs = 1
+  Total_Blocks = 0
+  Version = 1.0
+ 
+ 
+[Course_Behavior]
+  Max_Normal = 99
+ 
+[Course_Description]  
+  The purpose of this course is to provide an overview of the industry standard requirements of globalization as well as the Yahoo! specific processes and tools. This course will serve as an awareness generator and delve into the Level 1 Globalization requirements, as well as provide an introduction to Level 2 Globalization requirements.

@@ -1,0 +1,345 @@
+﻿.header {
+    padding: 64px 64px 0;
+    height: auto;
+    display: table;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.biogen-logo {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.trigger-help {
+    float: right;
+}
+
+.help-link {
+    color: white;
+}
+
+.fixed-width {
+    width: 450px;
+}
+
+.ib-col {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+    .ib-col.right {
+        margin-left: 64px;
+    }
+
+    .ib-col.image {
+        vertical-align: top;
+    }
+
+.positioned {
+    position: absolute;
+}
+
+.js-fade-in, .js-fade-in-after {
+    display: none;
+}
+
+
+
+/* ============================ */
+/* Slider - Empowered Customers */
+/* ============================ */
+
+/* Slide 1 - "Multichannel marketing" */
+.text-marketing {
+    left: 153px;
+    top: 227px;
+    font-family: 'ralewaybold';
+    font-size: 17px;
+    text-align: center;
+}
+
+.image-marketing {
+    top: 150px;
+}
+
+
+/* Slide 2 - Pharma, Then and now */
+.image-hospital {
+    top: 70px;
+    left: 185px;
+}
+
+.image-patients {
+    top: 215px;
+    left: 330px;
+}
+
+.image-biogen-pharma {
+    top: 265px;
+    left: 165px;
+}
+
+.image-stethoscope {
+    top: 220px;
+    left: 30px;
+}
+
+.image-money {
+    top: 350px;
+    left: 190px;
+}
+
+.image-pharma-circle {
+    top: 155px;
+    left: 120px;
+}
+
+/* Slide 3 - How does this apply to you?*/
+.image-insights {
+    top: 140px;
+    left: 70px;
+}
+
+.text-insights {
+    font-size: 24px;
+    font-family: 'ralewayextrabold';
+    top: 220px;
+    left: 163px;
+}
+
+
+/* Slide 4 - Audience segmentation */
+.image-audience-people {
+    top: 150px;
+    left: 60px;
+}
+
+.image-audience-circle {
+    top: 90px;
+    left: 30px;
+}
+
+/* ============================   */
+/* Slider - Get the Content Right */
+/* ============================   */
+
+/* Slide 3 - Content Forms */
+.image-content-forms.positioned {
+    left: 0;
+    top: 155px;
+}
+
+/* Slide 4*/
+
+.image-service {
+    top: 180px;
+    left: 35px;
+}
+
+.image-content {
+    top: 180px;
+    left: 280px;
+}
+
+/* Slide 5 - Customers */
+.image-customers.positioned {
+    left: 36px;
+    top: 140px;
+}
+
+/* ==================================== */
+/* Slider - Digital Customer Engagement */
+/* ==================================== */
+
+/* Slide 1 - Digital Customer Engagement*/
+
+
+.image-shapes {
+    top: 80px;
+    left: 40px;
+}
+
+.image-lines {
+    top: 120px;
+    left: 60px;
+}
+
+.image-silhouette {
+    top: 225px;
+    left: 57px;
+}
+
+/* Slides 2, 3, 4 - Owned, Paid, Earned Media */
+.multi-container .image {
+    position: absolute;
+    width: 200px;
+    height: 170px;
+}
+
+    .multi-container .image.one {
+        top: 0;
+        left: -15px;
+    }
+
+    .multi-container .image.two {
+        top: 0;
+        left: 185px;
+    }
+
+       .slide04 .multi-container .image.two img {
+            padding-top: 10px;
+        }
+
+    .multi-container .image.three {
+        top: 0;
+        left: 385px;
+    }
+
+        .slide04 .multi-container .image.three img {
+            padding-top: 15px;
+        }
+
+    .multi-container .image.four {
+        top: 0;
+        left: 585px;
+    }
+
+    .multi-container .image.five {
+        top: 205px;
+        left: -15px;
+    }
+
+    .multi-container .image.six {
+        top: 205px;
+        left: 185px;
+    }
+
+    .multi-container .image img {
+        display: block;
+        margin: 0 auto;
+    }
+
+.multi-container .image-description {
+    text-align: center;
+    width: 200px;
+    margin-top: 16px;
+    position: absolute;
+    bottom: 20px;
+    margin: 0;
+    height: 40px;
+}
+
+
+/* ==================================== */
+/* Slider - Collecting Data is only...  */
+/* ==================================== */
+
+/* Slide 1 - Loop Infographic*/
+.closing {
+    width: 180px;
+    font-size: 17px;
+    text-align: center;
+    top: 175px;
+    left: 105px;
+}
+
+.process {
+    width: 180px;
+    font-size: 17px;
+    text-align: center;
+    top: 300px;
+    left: 105px;
+}
+
+.image-mcm {
+    top: 215px;
+    left: 100px;
+}
+
+#module06 .ib-col.right > div {
+    width: 105px;
+}
+
+    #module06 .ib-col.right > div p,
+    #module06 .ib-col.right > div span {
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    #module06 .ib-col.right > div span {
+        position: absolute;
+    }
+
+.know {
+    top: 215px;
+    left: 279px;
+}
+
+    .know span {
+        left: -27px;
+        bottom: 2px;
+    }
+
+.deliver {
+    top: 370px;
+    left: 279px;
+}
+
+    .deliver span {
+        top: -13px;
+        left: -32px;
+    }
+
+.create {
+    top: 370px;
+    left: -2px;
+    text-align: right;
+}
+
+    .create span {
+        top: -15px;
+        right: -37px;
+    }
+
+.measure {
+    top: 215px;
+    left: -2px;
+    text-align: right;
+}
+
+    .measure span {
+        bottom: 24px;
+        right: -37px;
+    }
+
+
+/* ==================================== */
+/* Slider - Closing thoughts...         */
+/* ==================================== */
+
+.image-think {
+    top: 110px;
+}
+
+
+.link-download {
+    position: absolute;
+    top: 160px;
+    left: 39px;
+    width: 80px;
+    padding-top: 25px;
+    background: url(../images/mod7/download.png) no-repeat;
+    background-position: 20px 0;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+}
+
+    .link-download:hover {
+        background-position: 20px -46px;
+        color: white;
+    }

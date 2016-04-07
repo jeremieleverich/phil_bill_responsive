@@ -1,0 +1,68 @@
+<?xml version="1.0" standalone="no"?>
+<manifest identifier="digital-technologies-for-marketers" version="1.0" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 scorm/1_2_schemas/imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 scorm/1_2_schemas/imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 scorm/1_2_schemas/adlcp_rootv1p2.xsd http://www.sumtotalsystems.com/xsd/c2l_cp_rootv1p1 c2l_cp_rootv1p1.xsd" xmlns:c2lcp="http://www.sumtotalsystems.com/xsd/c2l_cp_rootv1p1">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1">
+      <general>
+        <title>
+          <langstring xml:lang="en-US">Digital Technologies for Marketers</langstring>
+        </title>
+        <catalogentry>
+          <catalog>Sublime Media</catalog>
+          <entry>
+            <langstring xml:lang="en-US">digital-technologies-for-marketers</langstring>
+          </entry>
+        </catalogentry>
+        <language>en-US</language>
+        <description>
+          <langstring xml:lang="en-US">Digital Technologies for Marketers</langstring>
+        </description>
+      </general>
+    </lom>
+  </metadata>
+
+  <organizations default="activity_01">
+    <organization identifier="activity_01">
+      <title><![CDATA[Biogen Idec]]></title>
+      <item identifier="item_01" identifierref="sco_01" isvisible="true">
+        <title><![CDATA[Biogen Idec]]></title>
+      </item>
+    </organization>
+  </organizations>
+
+  <resources>
+    <resource identifier="sco_01" type="webcontent" adlcp:scormtype="sco" href="default.htm">
+      <file href="default.htm" />
+    </resource>
+  </resources>
+
+  <!-- SumTotal proprietary extensions that hide the menu bar in the launch window and sets the dimensions to 1016x640-->
+  <c2lcp:ItemDataExtra>
+    <c2lcp:ItemData Type="Course">
+      <c2lcp:ItemSpecificData>
+        <c2lcp:CourseData>
+          <c2lcp:PackageProperties>
+            <c2lcp:CourseDisplay>
+              <c2lcp:ShowNavBar>no</c2lcp:ShowNavBar>
+              <c2lcp:TOC>
+                <c2lcp:MaxLevels>3</c2lcp:MaxLevels>
+                <c2lcp:MaxWidth>1</c2lcp:MaxWidth>
+                <c2lcp:ScrollBar>no</c2lcp:ScrollBar>
+                <c2lcp:TreeOpenIcon width="9" height="9" />
+                <c2lcp:TreeCloseIcon width="9" height="9" />
+                <c2lcp:TopImage width="-1" height="-1" />
+                <c2lcp:BottomImage width="-1" height="-1" />
+                <c2lcp:BackgroundColor>ffffff</c2lcp:BackgroundColor>
+              </c2lcp:TOC>
+            </c2lcp:CourseDisplay>
+            <c2lcp:Launch>
+              <c2lcp:Width>550</c2lcp:Width>
+              <c2lcp:Height>550</c2lcp:Height>
+            </c2lcp:Launch>
+          </c2lcp:PackageProperties>
+        </c2lcp:CourseData>
+      </c2lcp:ItemSpecificData>
+    </c2lcp:ItemData>
+  </c2lcp:ItemDataExtra>
+</manifest>

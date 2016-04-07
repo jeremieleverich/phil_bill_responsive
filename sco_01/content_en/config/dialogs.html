@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div>
+        <!-- dialog template -->
+        <div id="dialog-template">
+            <button class="close-dialog">Close</button>
+            <h2>
+                {{dialogtitle}}
+            </h2>
+            <div id="dialog-body">
+                {{dialogbody}}
+            </div>
+            <div id="dialog-button-container">
+                {{dialogbuttons}}
+            </div>
+        </div>
+
+        <div id="returndialog">
+            <div class="dialogtitle">
+                <span>Return to your prior location?</span>
+            </div>
+            <div class="dialogbody">
+                <div class="dialogcontent">
+                    <p>Would you like to return to the module where you last left off?</p>
+                </div>
+            </div>
+            <div class="dialogbuttons">
+                <button data-dialog-returns="true">RETURN</button>
+                <button data-dialog-returns="false">START OVER</button>
+            </div>
+        </div>
+
+        <div id="exitdialog">
+            <div class="dialogtitle">
+                <span>Are you sure you want to leave the course for now?</span>
+            </div>
+            <div class="dialogbody">
+                <div class="dialogcontent">
+                    <p>
+                        <!--You have viewed and completed <strong>{{scoreRaw|value}}%</strong> of the pages in this course. You have {{completionStatus|(isTrue('value') ? '' : 'not yet')}} completed this course.
+                        {{completionStatus|(isTrue('value') ? '' : 'Are you sure you want to leave?')}}-->
+                        If you leave, you can come back later and pick up where you left off.
+                    </p>
+                </div>
+            </div>
+            <div class="dialogbuttons">
+                <button data-dialog-returns="true">LEAVE FOR NOW</button>
+                <button data-dialog-returns="false">DON'T LEAVE</button>
+            </div>
+        </div>
+
+        <div id="feedbackdialog">
+            <div class="dialogtitle">
+                <span>Send us feedback.</span>
+            </div>
+            <div class="dialogbody">
+                <div class="dialogcontent">
+                    <p>Questions or comments about this course? Please fill out the box below and let us know.</p>
+                    <p><textarea name="message"></textarea></p>
+                </div>
+                <div class="dialogbuttons">
+                    <button data-dialog-returns="true">Yes, send my comments</button>
+                    <button data-dialog-returns="false">No, cancel</button>
+                </div>
+            </div>
+
+            <div id="helpdialog">
+
+                <div class="dialogtitle">
+                    Becoming an Inclusive Leader at Biogen Idec
+                </div>
+                <div class="dialogbody">
+                    <div class="dialogcontent">
+                        <h1 class="intro-welcome">Welcome</h1>
+                        <h2 class="sub-intro">Course Navigation</h2>
+                        <p>
+                            Throughout the course, there will be modules that contain a learning activity.
+                            Complete the activity to advance to the next module.
+                        </p>
+                        <ul>
+                            <li>Play animation and audio with the <img class="icon" src="../sco_01/theme/images/help/play-icon.png" alt="PLAY" /> button.</li>
+                            <li>Scroll vertically to advance to the next section or to review previous content.</li>
+                            <li>Select the <img class="icon" src="../sco_01/theme/images/help/next-arrow.png" alt="NEXT" /> and <img class="icon" src="../sco_01/theme/images/help/prev-arrow.png" alt="PREVIOUS" /> buttons to view content within modules.</li>
+                            <li>Select the <img class="icon" src="../sco_01/images/general/menu-button.png" alt="MENU" /> button to view the course contents and to navigate through the course.</li>
+                        </ul>
+
+                        <div class="cl-icon-explanation">
+                            <div class="cl-icon"></div>
+                            <p class="cl-explanation">
+                                CL icon will appear throughout the training to guide you through the learning
+                                interactions and serve as a course progress meter.
+                            </p>
+                        </div>
+                        <p class="footer">
+                            <strong>Please note:</strong> The characters represented in this course are fictitious and are not
+                            based on real people. Practicing all the components of closed loop multichannel
+                            marketing may not be applicable in every country. Contact your Digital Marketing
+                            Champion if you have any questions or concerns.
+                        </p>
+                    </div>
+                </div>
+                <div class="dialogbuttons">
+                    <button data-dialog-returns="false"></button>
+                </div>
+            </div>
+
+            <div id="indexdialog">
+                <div class="dialogtitle">
+                    <span>Index</span>
+                </div>
+                <div class="dialogbody">
+                    <div class="dialogcontent">
+                        <h3>Course Tile Here</h3>
+                        <p>
+                            To complete this course, you must review the modules below by following the prescribed path. Click any of the active links below
+                            to go to that module.
+                        </p>
+                        <ul></ul>
+                    </div>
+                </div>
+                <div class="dialogbuttons">
+                    <button data-dialog-returns="false">Close Dialog</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+; ----------------------------------------
+;
+; AICC Course Interchange File.
+;
+;
+; ----------------------------------------
+
+[Course]
+Course_ID=SM_EditorialPolicy
+Course_Title=SA Unified Editorial Policy
+Level=1
+Course_Creator=Sublime Media
+Course_System=Web Content
+Total_AUs=1
+Total_Blocks=0
+Max_Fields_CST=1
+Version=2.0
+
+[Course_Behavior]
+Max_Normal=99
+
+[Course_Description]
+This course is designed to provide an overview of the existing editorial policy and areas where new content restrictions or changes are being implemented as part of the Search Alliance initiative.
+

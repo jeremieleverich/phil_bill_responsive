@@ -1,0 +1,797 @@
+﻿/*Fonts*/
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('fonts/raleway-regular-webfont.eot');
+    src: url('fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/raleway-regular-webfont.woff') format('woff'), url('fonts/raleway-regular-webfont.ttf') format('truetype'), url('fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('fonts/raleway-light-webfont.eot');
+    src: url('fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/raleway-light-webfont.woff') format('woff'), url('fonts/raleway-light-webfont.ttf') format('truetype'), url('fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('fonts/raleway-bold-webfont.eot');
+    src: url('fonts/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/raleway-bold-webfont.woff') format('woff'), url('fonts/raleway-bold-webfont.ttf') format('truetype'), url('fonts/raleway-bold-webfont.svg#ralewaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayextrabold';
+    src: url('fonts/raleway-extrabold-webfont.eot');
+    src: url('fonts/raleway-extrabold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/raleway-extrabold-webfont.woff') format('woff'), url('fonts/raleway-extrabold-webfont.ttf') format('truetype'), url('fonts/raleway-extrabold-webfont.svg#ralewayextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/opensans-regular-webfont.eot');
+    src: url('fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/opensans-regular-webfont.woff') format('woff'), url('fonts/opensans-regular-webfont.ttf') format('truetype'), url('fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('fonts/opensans-bold-webfont.eot');
+    src: url('fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/opensans-bold-webfont.woff') format('woff'), url('fonts/opensans-bold-webfont.ttf') format('truetype'), url('fonts/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*Container Width Simple Grid - USED FOR IN-PAGE INTERACTION LAYOUT */
+/* =========================================
+	Inner width - Basic Width Classes for
+	div elements inside of panels
+==========================================*/
+
+/* Example:
+<article id="panel-01">
+	<div class="container-one-half"></div>
+</article>
+
+The div occupies half of its PARENT CONTAINER
+in this case.
+
+In normal cases, if you just want a div that
+stretches the width of the container, you don't
+need to specify that. Div is a block element
+(https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements)
+
+This layout loosely follows a 4 column grid structure. 
+the rightmost block element inside a container
+should have a class of 'last'
+*/
+.clearfix {
+
+}
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+ }
+
+
+/************PAGE LAYOUT**************/
+*, * body {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: 14px;
+    background: #efefef;
+    color: #000;
+    font-family: 'ralewayregular', sans-serif;
+}
+
+#page-align {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.strip-col {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    background-color: #fff;
+}
+
+article {
+    position: relative; 
+}
+article > div {
+    width: 1000px;
+    height: 560px;
+    margin: 0 auto;
+}
+
+article.info {
+    color:#FFF;
+}
+
+article.scenario {
+    color: #000;
+}
+
+
+/*************TEXT STYLES***************/
+p {
+    line-height: 140%;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-family: 'ralewayextrabold';
+    font-size: 90px;
+    line-height: 120%;
+    font-weight: normal;
+}
+
+
+h2 {
+    font-family: ralewayextrabold;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 100%;
+    margin: 85px 0 20px 0;
+}
+
+h3 {
+    font-family: 'ralewayextrabold';
+    font-weight: normal;
+    font-size: 24px;
+}
+
+strong {
+    font-family: 'ralewaybold';
+    font-weight: normal;
+}
+
+.bold {
+    font-family: 'ralewaybold';
+}
+
+.light {
+    font-family: 'ralewaylight';
+}
+
+.italic {
+    font-family: 'open_sansregular';
+    font-style: italic;
+}
+
+.inst-text,
+.white-box p.inst-text {
+    font-family: 'open_sansregular';
+    font-style: italic;
+    font-size: 11px;
+}
+
+.inst-text img {
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
+
+ol, ul {
+    padding-left: 16px;
+}
+
+    ol li, ul li {
+        padding-bottom: 5px;
+    }
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'open_sansbold';
+}
+
+button.check-answer, button.revisit-answer, .review-bill-phil {
+    width: 150px;
+    height: 35px;
+    border: 2px solid #000;
+    background-color: #FFF;
+    display: block;
+    font-family: 'ralewaybold';
+}
+
+.review-bill-phil {
+    width: auto;
+    padding: 8px;
+}
+
+button.close-btn {
+    background: url(../images/general/close-lightbox.png) no-repeat 0 0;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.play-button {
+    width: 130px;
+    height: 147px;
+    background: url(../images/general/play-btn-temp.png) no-repeat 0 0;
+}
+
+.pause-button {
+    width: 130px;
+    height: 147px;
+    background: url(../images/general/pause-btn-temp.png) no-repeat 0 0;
+}
+
+.text-col {
+    /*Base width to assist layout; adjust at slide level*/
+    width: 400px;
+}
+
+.multi-container {
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.multi-container > div {
+    position: absolute;
+}
+
+ul.questions {
+    font-family: 'ralewaybold';
+    font-size: 17px;
+    list-style-type: none;
+    padding: 5px 0 0 0;
+}
+
+ul.questions li {
+    background: url(../images/general/question-icon.png) no-repeat left 4px;
+    padding: 0 0 15px 55px;
+    line-height: 150%;
+}
+
+.white-box {
+    position: absolute;
+    width: 300px;
+    padding: 30px 15px 15px 15px;
+    background-color: #FFF;
+    border: 3px solid #52b342;
+    text-align: center;
+    color: #000;
+    z-index: 1001;
+}
+.white-box h2 {
+    font-size: 40px;
+    color: #52b342;
+    margin-top: 0;
+}
+.white-box.incorrect h2 {
+    color: #ff0000;
+}
+
+.white-box p {
+    font-size: 16px;
+}
+
+.bill-phil {
+    position: absolute;
+    width: 428px;
+    top:  0;
+    height: 100%;
+}
+
+.bill-phil.bill {
+    left: 0;
+    border-right: 3px solid #52b342;
+}
+
+.bill-phil.phil {
+    right: 0;
+}
+
+.wdyt > img {
+    position: absolute;
+    top: 125px;
+    left: 10px;
+}
+
+.wdyt div.bullets {
+    padding-left: 0;
+    position: absolute;
+    left: 330px;
+}
+
+.wdyt div.bullets > div {
+    background: url(../images/general/wdyt-icon.png) no-repeat left center;
+    height: 100px;
+}
+
+.wdyt div.bullets > div p {
+    padding-left: 80px;
+    font-size: 17px;
+    font-family: 'ralewaybold';
+}
+
+.wdyt div.bullets > div p.one-line {
+    padding-top: 37px;
+}
+
+.wdyt div.bullets > div p.two-line {
+    padding-top: 25px;
+}
+
+.wdyt div.bullets > div p.three-line {
+    padding-top: 13px;
+}
+
+.next-module {
+    width: 145px;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    right: -40px;
+}
+
+.next-module button span {
+    display: block;
+    line-height: 120%;
+    margin: 5px 0 17px;
+}
+
+.scroll-down-black {
+    background: url(../images/general/scroll-icon-black.png) no-repeat center bottom;
+   width: 100%;
+}
+
+.scroll-down-white {
+    background: url(../images/general/scroll-icon-white.png) no-repeat center bottom;
+    width: 100%;
+    color: #fff;
+}
+
+.pseudo-link {
+    text-decoration: underline;
+    color: #52b342;
+    cursor: pointer;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+.check-answer.disabled {
+    background-color: #efefef;
+    color: #808080;
+    border: 2px solid #808080;
+}
+
+.sublime-carousel-slide > div.lightbox, .lightbox.profiles, .transcript-modal {
+    background: url(../theme/images/px-000000-80.png);
+    width: 1000px;
+    height: 560px;
+    position: absolute;
+    z-index: 9999;
+    display: none;
+}
+
+.sublime-carousel-slide > div.lightbox.correct,
+.sublime-carousel-slide > div.lightbox.incorrect {
+    /*display: block;*/
+}
+
+.sublime-carousel-slide > div.lightbox > .white-box {
+    width: 285px;
+    top: 50px;
+    left: 310px;
+    padding: 30px 35px 15px 35px;
+    display: none;
+    
+}
+
+.sublime-carousel-slide > div.lightbox.correct > .white-box.correct,
+.sublime-carousel-slide > div.lightbox.incorrect > .white-box.incorrect {
+    display: block;
+}
+
+
+.locked-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background: url(../theme/images/px-ffffff-85.png);
+    text-align: center;
+    z-index: 5000;
+    /*display: none;*/
+}
+
+.locked .locked-cover,
+.locked .locked-cover img {
+    display: block;
+}
+
+.locked-cover img {
+    position: relative;
+    top: 38%;
+    width: 84px;
+    margin: 0 auto;
+    /*display: none;*/
+}
+
+.guidebox {
+    background: url(../theme/images/px-000000-80.png);
+    width: 1000px;
+    height: 560px;
+    position: absolute;
+    left: -70px;
+    z-index: 1000;
+}
+
+    .guidebox > div {
+        width: 3px;
+        height: 560px;
+        background-color: #52B342;
+        margin: 0 auto;
+    }
+
+
+
+
+/*iPad filters*/
+.filter-ipad {
+    display: none;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .filter-ipad {
+        display: inline;
+    }
+
+    .filter-noipad {
+        display: none;
+    }
+}
+
+
+
+
+
+
+/*****************************
+   SUBLIME LIGHTBOX
+******************************/
+.sublime-lightbox-shadow {
+    background: url(../theme/images/px-000000-80.png);
+}
+
+.sublime-lightbox {
+    z-index: 1000;
+    text-align: center;
+}
+
+
+
+/*****************************
+   CAROUSEL
+******************************/
+
+.carousel {
+    width: 1000px;
+    height: 560px;
+    position: relative;
+}
+
+.sublime-carousel-slides {
+    width:1000px;
+    height: 560px;
+    /*border: 1px solid #000;*/
+    /*margin: 0 50px;*/
+}
+
+.sublime-carousel-slide {
+    width:1000px;
+    height: 560px;
+}
+
+.sublime-carousel-slide > div {
+    width: 860px;
+    height: 560px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.sublime-carousel-navigation {
+    position: absolute;
+    z-index:999;
+}
+
+/*.sublime-carousel-navigation .sublime-carousel-disabled {
+    display: none;
+}*/
+
+.sublime-carousel-navigation.previous {
+    top: 45%;
+    left: 10px;
+}
+
+.sublime-carousel-navigation.next {
+     top: 45%;
+     right: 10px;
+}
+
+.sublime-carousel-navigation.jump {
+    text-align: center;
+    left: 400px;
+    bottom: 20px;
+    width: 197px;
+    height: 26px;
+    background-color: #4c4c4c;
+}
+
+.sublime-carousel-jump {
+    background: url(../images/general/jump.png) no-repeat 7px 7px;
+    width: 26px;
+    height: 26px;
+    /*margin: 7px 15px 0 0;*/
+}
+
+.sublime-carousel-jump.sublime-carousel-selected {  
+    background: url(../images/general/jump.png) no-repeat 7px -15px;
+    cursor: default;
+}
+
+.sublime-carousel-jump.sublime-carousel-disabled {
+    background: url(../images/general/jump.png) no-repeat 7px -38px;
+    cursor: default;
+}
+
+.sublime-carousel-previous, .sublime-carousel-next {
+    width: 45px;
+    height: 55px;
+}
+
+.sublime-carousel-previous.sublime-carousel-disabled, 
+.sublime-carousel-next.sublime-carousel-disabled {
+    display: none;
+}
+
+.info .sublime-carousel-previous {
+    background: url(../images/general/previous-white.png) no-repeat center center;
+    
+}
+
+.info .sublime-carousel-next {
+    background: url(../images/general/next-white.png) no-repeat center center;
+}
+
+.scenario .sublime-carousel-previous {
+    background: url(../images/general/previous-black.png) no-repeat center center;
+    
+}
+
+.scenario .sublime-carousel-next {
+    background: url(../images/general/next-black.png) no-repeat center top;
+}
+
+.scenario .sublime-carousel-next.disabled {
+    background: url(../images/general/next-black.png) no-repeat center -76px;
+    cursor: default;
+}
+
+
+
+/*****************************
+   MISC
+******************************/
+   
+.hidden {
+    display: none; 
+}
+
+
+
+
+/**********
+    AUDIO
+    ************/
+.video.audio-only {
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+div.custom-audio-controls {
+    width: 130px;
+    height: 158px;
+    position: absolute;
+    top: 75px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+   
+div.custom-audio-controls.left {
+    background: url(../images/general/audio-left.png) no-repeat center bottom;
+}
+
+div.custom-audio-controls.right {
+    background: url(../images/general/audio-right.png) no-repeat center bottom;
+}
+
+    .audio-controls.play-pause,
+    .audio-controls.seek {
+        /*display: inline-block;*/
+        padding: 0; 
+        cursor: pointer; 
+    }
+
+.audio-controls.play-pause {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 30px;
+    top: 42px;
+    background: url(../images/general/play-btn.png) no-repeat;
+    /*Play Button*/
+    background-position: center 7px;
+}        
+
+    .audio-controls.play-pause.play{
+        /*Pause Button*/
+        background-position: center -108px;
+    }
+
+    .audio-controls.play-pause.replay{
+        /*Replay Button*/
+        background-position: center -223px;
+    }
+
+    .seek.audio-controls {
+        background: url(../images/general/seek.png) no-repeat 0 0;
+        width: 115px;
+        height: 9px;
+        position: relative;
+        bottom: 48px;
+        overflow: hidden;
+        padding: 0 5px;
+        margin: 0 auto;
+    }
+
+    .js-seek {
+        display: none;
+    }
+
+    .js-seek.shown {
+    display: block;
+    }
+
+    .js-seek.visible {
+        display: block;
+    }
+
+    .seek-progress {
+        background-color: #4c4c4c;
+        height: 9px;
+        width: 0;
+        position: relative;
+        max-width: 100%;
+    }
+
+    .seek-progress img {
+        position: absolute;
+        right: -3px;
+    }
+
+.modal-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(images/px-000000-80.png);
+    z-index: 6000;
+    overflow: hidden;
+}
+
+
+
+
+.modal {
+    position: absolute;
+    top: 130px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    background-color: white;
+    width: 600px;
+}
+
+.lightbox.profiles .modal {
+    background: none;
+    position: static;
+
+}
+
+.lightbox.profiles .modal-content {
+   width: 600px;
+}
+
+.modal-content {
+    border: 3px solid #52b342;
+}
+
+.modal-exp {
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    padding: 16px;
+    height: 170px;
+}
+
+
+    .modal-exp.bill {
+        background-color: #ddf0d9;
+    }
+
+    .modal-exp.phil {
+        background-color: #d0f0f4;
+    }
+
+
+.modal-content {
+    width: 350px;
+    height: 175px;
+    margin: 0 auto; 
+    margin-top: 210px;
+    background: #fff;
+
+}
+
+.transcript-text {
+    padding: 12px;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

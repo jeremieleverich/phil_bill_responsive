@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inidata identifier="Digital Technologies for Marketers" catalog="Sublime Media" version="1.0">
+  <styletitle>
+    <![CDATA[Digital Technologies for Marketers]]>
+  </styletitle>
+  <coursecopyright><![CDATA[©2014 Sublime Media. All Rights Reserved.]]></coursecopyright>
+  <rightclick>This course was developed by Sublime Media - http://sublimemedia.com</rightclick>
+  <dimensions width="1034" height="570" allowresize="true" />
+
+  <!-- preferredapis: list desired communication APIs in order of preference: Scorm2004Api, Scorm12Api, AiccApi -->
+  <preferredapis>
+    <api>Scorm12Api</api>
+    <api>Scorm2004Api</api>
+    <!--<api>AiccApi</api>-->
+  </preferredapis>
+
+  <!-- scorescheme: can be 'assessment' or 'completion' -->
+  <scorescheme>completion</scorescheme>
+  <!-- scores: must be between 0 and 1; 80% = 0.8, 100% = 1 -->
+  <scoremin>0</scoremin>
+  <scorethreshold>100</scorethreshold>
+  <scorethresholdobjectives>1</scorethresholdobjectives>
+
+  <!--<sublimelms baseuri="https://sublimemedia.com:8446/">-->
+  <sublimelms baseuri="http://localhost:56121/">
+    <!-- allowlogging: [true|false] toggle whether or not we can ask the user to send a debug log along with feedback in case of an issue with the course -->
+    <allowdebuglogging>false</allowdebuglogging>
+    <!-- trackinteractions: [true|false] toggle whether or not we should additionally track interactions (CYK/assessment) -->
+    <trackinteractions>false</trackinteractions>
+    <!-- trackcompletions: [true|false] toggle whether or not we should additionally track completions -->
+    <trackcompletions>false</trackcompletions>
+  </sublimelms>
+
+  <showintropage html="intro">false</showintropage>
+
+  <dialogswitches>
+    <exitdialog>true</exitdialog>
+    <returndialog>true</returndialog>
+    <reviewmodedialog>false</reviewmodedialog>
+    <preassessmentdialog>false</preassessmentdialog>
+    <assessmentdialog>false</assessmentdialog>
+  </dialogswitches>
+
+  <sniffers>
+    <plugins>
+      <!-- for Flash: "A.B.C.D" = version A.B rev C.D -->
+      <!--<allow plugin="flash" version="10" />-->
+      <!-- for Silverlight: "A.B.C.D" -->
+      <!--<allow plugin="silverlight" version="4.0.50401.0" />-->
+    </plugins>
+    <browsers denyunlisted="true">
+      <!-- client currently detected: [chrome|firefox|msie|opera|safari] -->
+      <!-- platforms currently detected: [windows|iemobile|macintosh|ios|x11|android] -->
+      <allow client="msie" version="8" />
+      <allow client="chrome" />
+      <allow client="firefox" />
+      <allow client="safari" platform="ios" version="7" />
+      <deny client="opera" />
+    </browsers>
+  </sniffers>
+
+  <languages default="en">
+    <language code="en"><![CDATA[English]]></language>
+    <!-- sample languages; use as examples for localization
+    <language code="arb"><![CDATA[العربية]]></language>
+    <language code="zh"><![CDATA[简体中文]]></language>
+    <language code="nl"><![CDATA[Nederlands]]></language>
+    <language code="fr"><![CDATA[Français]]></language>
+    <language code="es"><![CDATA[Español]]></language>-->
+  </languages>
+
+  <!-- these should only be used during testing! -->
+  <!--<testingvalues>
+    <learnerid>1234</learnerid>
+    <learnername>max.h</learnername>
+  </testingvalues>-->
+</inidata>

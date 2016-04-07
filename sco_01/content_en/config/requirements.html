@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="../../theme/page.css" rel="stylesheet" />
+    <script src="../../../framework/scripts/jquery-1.11.0.min.js"></script>
+    <script src="../../theme/page.js"></script>
+    <title></title>
+    <style>
+
+        #wrapper {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .softwareupdate, .compatview, body.iscompatview .outofdate {
+            display: none;
+        }
+
+        body.iscompatview .compatview {
+            display: block;
+        }
+
+        .requirementspage {
+            /*text-align: center;*/
+            /*padding: 0 40px;*/
+            background: #ccc;
+            overflow: hidden;
+            width: auto;
+            height: auto;
+        }
+
+        h1 {
+            padding: 60px 0 0 0;
+            margin-bottom: 20px;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-family: 'ralewaybold';
+            font-weight: normal;
+            margin: 35px 0 10px;
+        }
+
+        a {
+            color: #005baa;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 140%;
+            margin-bottom: 12px;
+        }
+
+        .compatview p {
+            line-height: 180%;
+            margin-bottom: 15px;
+        }
+
+        .compatviewicon {
+            position: relative;
+            padding-right: 104px;
+        }
+
+        .compatviewicon img {
+            position: absolute;
+            top: -6px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body class="requirementspage">
+    <div id="wrapper">
+        <h1>Updates needed.</h1>
+        <div id="flash" class="softwareupdate">
+            <h2>Please update Adobe Flash.</h2>
+        </div>
+        <div id="silverlight" class="softwareupdate">
+            <h2>Please update Microsoft Silverlight.</h2>
+        </div>
+        <div id="browser" class="softwareupdate">
+            <h2>Please update your browser to view this course.</h2>
+            <p class="outofdate">Your browser is not compatible with this course, or it is not up-to-date.</p>
+            <p class="outofdate">Internet Explorer users, ensure you are running version 8 or higher. iPad users, ensure you are running iOS 7 or higher.</p>
+            <div class="compatview">
+                <h2>Please turn off Compatibility View</h2>
+                <p>
+                    Your browser currently has Compatibility View turned on. To use this course, Compatibility View must be turned
+                    off. To do so, please close this window, click the Compatibility View button ( <span class="compatviewicon"><img src="../../theme/images/compat-view.png" alt="IE compatibilty view icon" /></span> ) in the browser's address bar, and then re-launch this training.</p>
+                <p>For more information about Compatibility View please see <a href="http://windows.microsoft.com/en-us/internet-explorer/use-compatibility-view" target="_blank">this page</a>.</p>
+                
+            </div>
+        </div>
+    </div>
+    <script src="../../../framework/scripts/requirementssniffer.js"></script>
+    <script>
+
+        //var browserstatus = RequirementsSniffer.sniffBrowser(xml.ini.find('sniffers > browsers'));
+        //var platform = browserstatus.platform;
+
+        var match, search = /([^&=]+)=?([^&]*)/g, qs = window.location.search.substring(1), params = {};
+        var decode = function (s) {
+            return decodeURIComponent(s.replace('+', ' '));
+        }
+
+        while (match = search.exec(qs)) {
+            //params[decode(match[1])] = decode(match[2]);    // <-- use this if you need to get the version numbers as well as the names of the components
+            $('#' + decode(match[1])).show();
+            
+        }
+
+        // additional check for compatibility mode so we can show the appropriate message
+        if (RequirementsSniffer.sniffCompatView())
+            $('body').addClass('iscompatview');
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0"?>
+<manifest identifier="sample_course" version="1.1" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 scorm/1_2_schemas/imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 scorm/1_2_schemas/imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 scorm/1_2_schemas/adlcp_rootv1p2.xsd">
+	<metadata>
+		<lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1">
+			<general>
+				<title>
+					<langstring>Sample Course Title</langstring>
+				</title>
+				<catalogentry>
+					<catalog>NA</catalog>
+					<entry>
+						<langstring>NA</langstring>
+					</entry>
+				</catalogentry>
+				<description>
+					<langstring><![CDATA[Sample Course Description. Can contain HTML formatting. ]]></langstring>
+				</description>
+				<keyword>
+					<langstring>NA</langstring>
+				</keyword>
+			</general>
+			<lifecycle>
+				<version>
+					<langstring>1.0</langstring>
+				</version>
+				<status>
+					<source>
+						<langstring xml:lang="x-none">LOMv1.0</langstring>
+					</source>
+					<value>
+						<langstring xml:lang="x-none">Final</langstring>
+					</value>
+				</status>
+				<contribute>
+					<role>
+						<source>
+							<langstring xml:lang="x-none">LOMv1.0</langstring>
+						</source>
+						<value>
+							<langstring xml:lang="x-none">Author</langstring>
+						</value>
+					</role>
+					<centity>
+						<vcard></vcard>
+					</centity>
+				</contribute>
+			</lifecycle>
+			<metametadata>
+				<catalogentry>
+					<catalog>Metadata catalog</catalog>
+					<entry>
+						<langstring>Metadata catalog entry</langstring>
+					</entry>
+				</catalogentry>
+				<metadatascheme>LOMv1.0</metadatascheme>
+			</metametadata>
+			<technical>
+				<format>text/html</format>
+				<location type="TEXT">c:\</location>
+			</technical>
+			<educational></educational>
+			<rights>
+				<cost>
+					<source>
+						<langstring xml:lang="x-none">LOMv1.0</langstring>
+					</source>
+					<value>
+						<langstring xml:lang="x-none">no</langstring>
+					</value>
+				</cost>
+				<copyrightandotherrestrictions>
+					<source>
+						<langstring xml:lang="x-none">LOMv1.0</langstring>
+					</source>
+					<value>
+						<langstring xml:lang="x-none">yes</langstring>
+					</value>
+				</copyrightandotherrestrictions>
+			</rights>
+			<classification>
+				<purpose>
+					<source>
+						<langstring xml:lang="x-none">LOMv1.0</langstring>
+					</source>
+					<value>
+						<langstring xml:lang="x-none">Discipline</langstring>
+					</value>
+				</purpose>
+				<description>
+					<langstring>Description of discipline for classification.</langstring>
+				</description>
+				<keyword>
+					<langstring>Keyword or phrase</langstring>
+				</keyword>
+				<keyword>
+					<langstring>Keyword or phrase</langstring>
+				</keyword>
+			</classification>
+		</lom>
+	</metadata>
+	<organizations default="Org1">
+		<organization identifier="Org1" structure="hierarchical">
+			<title>Sample Course Title</title>
+			<item identifier="L0001" isvisible="true" identifierref="R1">
+				<title>Sample Course SCO 1 Title</title>
+			</item>
+		</organization>
+	</organizations>
+	<resources>
+		<resource identifier="R1" type="webcontent" adlcp:scormtype="sco" href="launch.htm">
+			<file href="launch.htm"></file>
+		</resource>
+	</resources>
+</manifest>

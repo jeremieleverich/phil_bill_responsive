@@ -1,0 +1,1029 @@
+﻿
+
+
+#module01 {
+    background-color: #52B342;
+    color: #fff;
+}
+
+    #module01 .header {
+        height: 100px;
+    }
+
+    #module01 h1 {
+        width: 100%;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    #module01 .next-module {
+        right: 428px;
+    }
+
+#module02 .slide01 {
+    background: url(../images/mod2/bill-phil-1.png) no-repeat 0 0;
+}
+
+    #module02 .slide01 .white-box {
+        width: 630px;
+        top: 300px;
+        left: 100px;
+    }
+
+
+#module02 .slide02 {
+    background: url(../images/mod2/bill-phil-1.png) no-repeat 0 0;
+}
+
+    #module02 .slide02 .bill-phil img {
+        position: absolute;
+        top: 85px;
+    }
+
+    #module02 .slide02 .bill-phil.bill img {
+        left: 25px;
+    }
+
+    #module02 .slide02 .bill-phil.phil img {
+        right: 25px;
+    }
+
+    #module02 .slide02 .white-box {
+        width: 700px;
+        top: 370px;
+        left: 65px;
+    }
+
+#module02 .slide03 {
+    background: url(../images/mod2/bill-phil-2.png) no-repeat 0 0;
+}
+
+    #module02 .slide03 .bill-phil p {
+        position: absolute;
+        top: 30px;
+        width: 177px;
+    }
+
+    #module02 .slide03 .bill-phil.bill p {
+        right: 35px;
+    }
+
+    #module02 .slide03 .bill-phil.phil p {
+        left: 35px;
+        width: 187px;
+    }
+
+    #module02 .slide03 .bill-phil img {
+        position: absolute;
+        top: 85px;
+    }
+
+    #module02 .slide03 .bill-phil.bill img {
+        left: 10px;
+    }
+
+    #module02 .slide03 .bill-phil.phil img {
+        right: 10px;
+    }
+
+#module02 .slide04 {
+    background: url(../images/mod2/bill-phil-3.png) no-repeat 0 0;
+}
+
+    #module02 .slide04 .bill-phil p {
+        position: absolute;
+        top: 30px;
+        width: 300px;
+    }
+
+    #module02 .slide04 .bill-phil.bill p {
+        left: 25px;
+    }
+
+    #module02 .slide04 .bill-phil.phil p {
+        right: 25px;
+    }
+
+    #module02 .slide04 .bill-phil img {
+        position: absolute;
+        bottom: 0;
+    }
+
+    #module02 .slide04 .bill-phil.bill img {
+        left: 100px;
+    }
+
+    #module02 .slide04 .bill-phil.phil img {
+        right: 100px;
+    }
+
+    #module02 .slide04 .white-box {
+        width: 215px;
+        top: 260px;
+        left: 305px;
+    }
+
+#module02 .slide05 {
+    background: url(../images/mod2/bill-phil-4.png) no-repeat 0 0;
+}
+
+    #module02 .slide05 .bill-phil > div {
+        position: absolute;
+        top: 85px;
+        width: 148px;
+        height: 168px;
+    }
+
+    #module02 .slide05 .bill-phil.bill > div {
+        left: 125px;
+        background: url(../images/mod2/quote-left.png) no-repeat 0 0;
+    }
+
+        #module02 .slide05 .bill-phil.bill > div p {
+            width: 84px;
+            padding: 23px 38px;
+        }
+
+
+    #module02 .slide05 .bill-phil.phil > div {
+        right: 125px;
+        background: url(../images/mod2/quote-right.png) no-repeat 0 0;
+    }
+
+        #module02 .slide05 .bill-phil.phil > div p {
+            width: 93px;
+            padding: 45px 32px;
+        }
+
+    #module02 .slide05 .white-box {
+        width: 350px;
+        top: 350px;
+        left: 216px;
+        padding: 30px 35px 15px 35px;
+    }
+
+
+
+
+#module03 {
+    background-color: #005baa;
+}
+
+    #module03 .slide01 .text-col {
+        width: 330px;
+    }
+
+    #module03 .slide02 .text-col {
+        width: 330px;
+    }
+
+    #module03 .slide03 .text-col {
+        width: 410px;
+        padding-top: 85px;
+    }
+
+        #module03 .slide03 .text-col p.larger {
+            font-size: 17px;
+        }
+
+    #module03 .slide04 .text-col {
+        width: 315px;
+    }
+
+    #module03 .slide05 .text-col {
+        width: 370px;
+        position: absolute;
+        top: 175px;
+    }
+
+        #module03 .slide05 .text-col.text-col1 {
+            left: 0;
+        }
+
+        #module03 .slide05 .text-col.text-col2 {
+            right: 0;
+        }
+
+
+
+#module03a .slide01 {
+    background: url(../images/mod3/bill-phil.png) no-repeat 0 0;
+}
+
+ #module03a .slide01 .white-box {
+        width: 220px;
+        top: 40px;
+        left: 293px;
+        padding: 30px 25px 15px;
+    }
+
+ #module03a .slide01 .bill-phil.bill .custom-audio-controls {
+        left: -25px;
+    }
+
+ #module03a .slide01 .bill-phil.phil .custom-audio-controls {
+        right: -25px;
+    }
+
+ #module03a .slide01 .play-button,
+ #module03a .slide01 .pause-button {
+     position: absolute;
+     top: 85px;
+ }
+
+ #module03a .slide01 .play-button {
+     left: -20px;
+ }
+
+ #module03a .slide01 .pause-button {
+     right: -20px;
+ }
+
+#module03a .slide02 {
+    background: url(../images/mod3/2-tone.png) no-repeat 0 0;
+}
+
+#module03a .slide02 .inst-text {
+    margin: 40px 0 0;
+    text-align: center;
+}
+
+#module03a .slide02 .option {
+    width: 768px;
+    height: 160px;
+    margin: 10px auto 15px;
+    position: relative;
+}
+
+#module03a .slide02 .option-text {
+    background-color: #fff;
+    position: absolute;
+    left: 87px;
+    width: 596px;
+    height: 160px;
+    text-align: center;
+}
+
+#module03a .slide02 .option-text h3 {
+    margin: 30px 0 10px;
+}
+
+#module03a .slide02 .option-text p {
+    width: 526px;
+    margin: 0 auto;
+}
+
+#module03a .slide02 .left-radio,
+#module03a .slide02 .right-radio {
+    position: absolute;
+    width: 86px;
+    height: 160px;
+    top: 0;
+    
+}
+
+#module03a .slide02 .left-radio {
+    background-color: #52B342;
+    left: 0;
+}
+
+#module03a .slide02 .right-radio {
+    background-color: #13B1C8;
+    right: 0;
+}
+
+#module03a .slide02 label {
+    color: #fff;
+    font-family: 'ralewayextrabold';
+    font-size: 24px;
+    display: block;
+    margin: 40px 23px;
+}
+
+#module03a .slide02 label span {
+    background: url(../images/mod3/radio-button.png) no-repeat 0 0;
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/*temp for layout*/
+#module03a .slide02 label span.selected {
+    background: url(../images/mod3/radio-button.png) no-repeat 0 -51px;
+}
+
+#module03a .slide02 button.check-answer {
+    margin: 30px auto;
+}
+
+
+#module03a .slide03 {
+    /*background-color: #eeeeee;*/
+}
+
+#module03a .slide03 .wdyt > div.bullets {
+    top: 180px;
+}
+
+#module03a .slide03 .wdyt div.bullets p {
+     width: 404px;
+}
+
+
+
+
+#module04 {
+    background-color: #13B1C8;
+}
+
+    #module04 .slide01 .text-col {
+        width: 430px;
+    }
+
+
+    #module04 .slide02 > div {
+        margin-top: 85px;
+    }
+
+.two-col-container {
+    position: relative;
+    width: 100%;
+}
+
+#module04 .slide02 .text-col {
+    width: 374px;
+    position: absolute;
+    top: 0;
+}
+
+    #module04 .slide02 .text-col.text-col1 {
+        left: 0;
+    }
+
+    #module04 .slide02 .text-col.text-col2 {
+        right: 0;
+    }
+
+#module04 .slide03 .text-col {
+    padding-top: 200px;
+    width: 325px;
+}
+
+#module04 .slide04 .text-col {
+    width: 422px;
+}
+
+#module04 .slide05 .text-col {
+    width: 293px;
+    padding-top: 160px;
+}
+
+#module04a .slide01 {
+    /*background-color: #eeeeee;*/
+}
+
+#module04a .slide01 .text-col {
+    width: 265px;
+    font-size : 16px;
+}
+
+#module04a .slide01 .text-col h2 {
+    font-size: 40px;
+    line-height: 140%;
+    color:#52B342;
+}
+
+#module04a .slide01 #drag-one + p {
+    padding-top: 24px;
+}
+
+#module04a .slide01 .drag-and-drop {
+    position: absolute;
+    width: 410px;
+    height: 100%;
+    top: -85px;
+    right: 20px;
+}
+
+#module04a .slide01 .drag-and-drop .inst-text {
+    margin: 45px 0 5px 0;
+    margin-bottom: 5px;
+}
+
+#module04a .slide01 .drag-container > div {
+    
+    position: relative;
+    height: 56px;
+    padding-bottom: 20px; 
+}
+
+#module04a .slide01 .drag-and-drop > div p {
+    padding: 15px 0 0 70px;
+}
+
+.drag-target-container {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 56px;
+    height: 56px;
+    background: url(../images/mod4/draggable-start.png) no-repeat left center;
+}
+
+#module04a .slide01 .drag-and-drop .drag-target {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    top: 0;
+    left: 0;
+    background: url(../images/mod4/draggable.png) no-repeat;
+    background-position: 0 0;
+    z-index: 2;
+    padding: 0;
+    cursor: pointer;
+}
+
+#module04a .slide01 .drag-and-drop .drag-container .drag-target {
+    /*cursor: move;*/
+}
+
+#module04a .slide01 .drag-and-drop .drag-target.ui-draggable-dragging.over {
+    background: url(../images/mod4/draggable.png) no-repeat 0 -181px;
+}
+
+#module04a .slide01 .drag-and-drop .drag-target.ui-draggable-dragging.over p {
+    color: #fff;
+}
+
+#module04a .slide01 .drag-and-drop .drag-target.selected,
+#module04a .slide01 .drag-and-drop .drag-target.ui-draggable-dragging {
+     background-position: 0 -90px;
+     z-index: 3;
+}
+
+#module04a .slide01 .drag-and-drop .drag-target.ui-draggable-dragging {
+    cursor: move;
+}
+
+#module04a .slide01 .drag-and-drop .drag-target.ui-draggable-dragging p {
+    color: #52B342;
+}
+
+#module04a .slide01 .drag-and-drop .drag-target p {
+    width: 56px;
+    height: 56px;
+    line-height: 52px;
+    font-family: 'ralewayextrabold';
+    font-size: 32px;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#module04a .slide01 .drag-and-drop .drag-target.selected p {
+    color: #52b342;
+}
+
+#module04a .slide01 .drop-container {
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url(../images/mod4/bill-silhouette.png) no-repeat 10px bottom;
+} 
+
+#module04a .slide01 .drop-container > div {
+    width: 60px;
+    position: relative;
+    top: 55px;
+    left: 143px;
+}
+
+#module04a .slide01 .drop-target {
+    height: 56px;
+    width: 56px;
+    background: url(../images/mod4/droppable.png) no-repeat 0 0;
+    margin-bottom: 15px;
+    position: relative;
+    cursor:pointer;
+}
+
+#module04a .slide01 .drop-target.selected {
+    background-position: 0 bottom;
+}
+
+#module04a .slide01 .drop-target .drag-target {
+    top: 0;
+    background: url(../images/mod4/draggable.png) no-repeat 0 -181px;
+    z-index: 1;
+}
+
+#module04a .slide01 .drop-target.selected .drag-target {
+    background-position: 0 -90px;
+}
+
+#module04a .slide01 .drop-target.selected .drag-target p {
+    color: #52B342;
+}
+
+#module04a .slide01 button.check-answer {
+    position: absolute;
+    bottom: 95px;
+    right: 0;
+}
+
+#module04a .slide01 button.revisit-answer {
+    position: absolute;
+    bottom: 75px;
+    right: 85px;
+}
+
+#module04a .slide01 .feedback {
+    position: absolute;
+    width: 500px;
+    height: 100%;
+    top: -85px;
+    right: -570px;
+    background: #e5f3e2 url(../images/mod4/bill.png) no-repeat 10px bottom;
+    z-index: 3;
+    display: none;
+}
+
+
+#module04a .slide01 .feedback .correct,
+#module04a .slide01 .feedback .incorrect {
+    display: none;
+}
+
+#module04a .slide01 .feedback.correct,
+#module04a .slide01 .feedback.incorrect,
+#module04a .slide01 .feedback.correct .correct,
+#module04a .slide01 .feedback.incorrect .incorrect {
+    display: block;
+}
+
+#module04a .slide01 .feedback .text-col {
+    width: 390px;
+    padding: 85px 0 0 50px;
+}
+
+#module04a .slide01 .feedback .text-col h3 {
+    color: #52B342;
+    margin-bottom: 12px;
+}
+
+#module04a .slide01 .feedback .text-col h3.incorrect {
+    color: #ff0000;
+}
+
+#module04a .slide01 .feedback .text-col p {
+    font-size: 14px;
+    line-height: 130%;
+}
+
+#module04a .slide01 .text-col .inst-text {
+    /*font-size: 16px;*/
+}
+
+#module04a .slide01 .feedback .audio-container {
+    position: absolute;
+    top: -27px;
+    width: 140px;
+}
+
+#module04a .slide01 .feedback .audio-container .inst-text {
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+#module04a .slide01 .feedback .custom-audio-controls {
+    top: 285px;
+    right: 100px;
+}
+
+
+
+
+#module04a .slide02 {
+    /*background-color: #eeeeee;*/
+}
+
+#module04a .slide02 .wdyt > div.bullets {
+    top: 130px;
+}
+
+#module04a .slide02 .wdyt > div.bullets p {
+     width: 413px;
+}
+
+
+
+
+#module05 {
+    background-color: #52B342;
+}
+
+    #module05 h3 {
+        margin: 65px 0 15px 0;
+    }
+
+    #module05 .slide01 .text-col {
+        width: 441px;
+    }
+
+    #module05 .slide05 .text-col {
+        width: 445px;
+        padding-top: 190px;
+    }
+
+    #module05 .slide05 img {
+        top: 130px;
+        left: 20px;
+    }
+
+
+#module05a .slide01 .text-col {
+    width: 490px;
+    font-size : 16px;
+}
+
+#module05a .slide01 .text-col h2 {
+    font-size: 40px;
+    line-height: 140%;
+    color:#52B342;
+}
+
+#module05a .slide01 > div > img {
+    position: absolute;
+    top: 120px;
+    right: 70px;
+}
+
+#module05a .slide02 .text-col,
+#module05a .slide03 .text-col,
+#module05a .slide04 .text-col {
+    padding-top: 85px;
+}
+
+#module05a ul.question-container {
+    padding-left: 0;
+    margin-top: 25px;
+}
+
+#module05a ul.question-container li {
+    list-style-type: none;
+    height: 55px;
+}
+
+#module05a input[type=radio] + label span.check {
+    width: 40px;
+    height: 40px;
+    background: url(../images/mod5/checkbox.png) no-repeat 0 0;
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+#module05a input[type=radio] + label span.check.selected {
+    background: url(../images/mod5/checkbox.png) no-repeat 0 -68px;
+}
+
+#module05a input[type=radio] + label span.check.selected.incorrect {
+    background: url(../images/mod5/checkbox.png) no-repeat 0 -134px;
+}
+
+#module05a label span.block {
+    float: right;
+    width: 343px;
+    margin-top: 3px;
+}
+
+#module05a label span.block.one-row {
+    margin-top: 10px;
+}
+
+#module05a label span.block.three-row {
+    margin-top: 0;
+}
+
+#module05a .check-answer {
+    margin-top: 10px;
+}
+
+#module05a .slide04 .check-answer {
+    margin-top: 20px;
+}
+
+#module05a .feedback {
+    position: absolute;
+    width: 500px;
+    height: 100%;
+    top: 0;
+    right: -70px;
+    background: #e5f3e2;
+}
+
+#module05a .feedback .top {
+    height: 270px;
+    position: relative;
+   border-bottom: 2px solid #000;
+}
+
+#module05a .feedback h3 {
+    color:#52B342;
+    margin: 90px 0 0 50px;
+}
+
+#module05a .feedback .progress {
+    width: 95px;
+    height: 42px;
+    margin: 75px 0 0 50px;
+    background: url(../images/mod5/score-pills.png) no-repeat;
+}
+
+#module05a .feedback .visual-feedback {
+    width: 280px;
+    height: 262px;
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    background: url(../images/mod5/woman-neutral.png) no-repeat 0 0;
+}
+
+#module05a .feedback.correct .visual-feedback {
+    background: url(../images/mod5/woman-happy.png) no-repeat 0 0;
+}
+
+#module05a .slide02 .feedback .progress {
+    background-position: 0 0;
+}
+
+#module05a .slide02 .feedback .progress.answered {
+    background-position: 0 -69px;
+}
+
+#module05a .slide03 .feedback .progress {
+    background-position: 0 -70px;
+}
+
+#module05a .slide03 .feedback .progress.answered {
+    background-position: 0 -140px;
+}
+
+#module05a .slide04 .feedback .progress {
+    background-position: 0 -140px;
+}
+
+#module05a .slide04 .feedback .progress.answered {
+    background-position: 0 -209px;
+}
+
+#module05a .feedback .text-feedback {
+    margin: 15px 40px 0 50px;
+}
+
+#module05a .feedback .heading-feedback,
+#module05a .feedback .heading-feedback .correct,
+#module05a .feedback .heading-feedback .incorrect,
+#module05a .feedback .text-feedback,
+#module05a .feedback .text-feedback .correct,
+#module05a .feedback .text-feedback .incorrect {
+    display: none;
+}
+
+#module05a .feedback.correct .heading-feedback,
+#module05a .feedback.incorrect .heading-feedback,
+#module05a .feedback.correct .text-feedback,
+#module05a .feedback.incorrect .text-feedback {
+    display: block;
+}
+
+#module05a .feedback.correct .heading-feedback .correct,
+#module05a .feedback.correct .text-feedback .correct {
+    display: block;
+}
+
+#module05a .feedback.incorrect .heading-feedback .incorrect,
+#module05a .feedback.incorrect .text-feedback .incorrect {
+    display: block;
+}
+
+#module05a .feedback.incorrect .heading-feedback .incorrect {
+    color: #ff0000;
+}
+
+#module05a .slide05 {
+    /*background-color: #eeeeee;*/
+}
+
+#module05a .slide05 .text {
+    width: 695px;
+    padding-top: 85px;
+    margin-left: 10px;
+}
+
+#module05a .slide05 .wdyt > img {
+    top: 175px;
+}
+#module05a .slide05 .wdyt > div.bullets {
+    top: 230px;
+}
+
+#module05a .slide05 .wdyt > div.bullets p {
+     width: 400px;
+}
+
+.head-text {
+        margin: 20px auto;
+    width: 65%;
+}
+
+
+
+
+
+#module06 {
+    background-color: #005BAA;
+}
+
+    #module06 .slide01 .text-col {
+        width: 373px;
+    }
+
+    #module06 .slide02 p {
+        width: 95%;
+    }
+
+        #module06 .slide02 p.sub-heading {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        #module06 .slide02 .next-module {
+            bottom: 108px;
+        }
+
+#module06a .slide01 {
+    background: url(../images/mod6/bill-phil.png) no-repeat 0 0;
+}
+
+#module06a .slide01 .white-box {
+    width: 560px;
+    bottom: 75px;
+    left: 115px;
+    padding: 30px 35px 15px 35px;
+}
+
+#module06a .slide02 {
+    background: url(../images/mod6/bill-phil-2.png) no-repeat 0 0;
+}
+
+#module06a .slide02 ul li {
+    margin-bottom: 8px;
+}
+
+#module06a .slide02 .multi-container > div {
+    width: 243px;
+    top: 55px;
+}
+
+#module06a .slide02 .multi-container > div.col1 {
+    left: 0;
+}
+
+#module06a .slide02 .multi-container > div.col2 {
+    left: 309px
+}
+
+#module06a .slide02 .multi-container > div.col3 {
+    right: 0;
+}
+
+#module06a .slide02 img.image-left,
+#module06a .slide02 img.image-right {
+    position: absolute;
+    bottom: 140px;
+}
+
+#module06a .slide02 img.image-left {
+    left: 20px;
+}
+
+#module06a .slide02 img.image-right {
+    right: 20px;
+}
+
+#module06a .slide03 {
+    /*background-color: #eeeeee;*/
+}
+
+#module06a .slide03 .closing-the-loop {
+    position: absolute;
+    top: 185px;
+    left: 20px;
+}
+
+#module06a .slide03 .closing-the-loop p {
+     position: absolute;
+    top: 67px;
+    left: 61px;
+    font-family: 'ralewaybold';
+    font-size: 17px;
+}
+
+#module06a .slide03 .text-col {
+    width: 547px;
+    padding-top: 213px;
+    margin-left: 250px;
+}
+
+#module06a .slide04 {
+    /*background-color: #eeeeee;*/
+}
+
+#module06a .slide04 .wdyt > div.bullets {
+    top: 180px;
+}
+
+#module06a .slide04 .wdyt > div.bullets p {
+     width: 404px;
+}
+
+
+
+#module07 {
+    background-color: #13B1C8;
+}
+
+    #module07 .slide01 .text-col {
+        width: 374px;
+        position: absolute;
+    }
+
+        #module07 .slide01 .text-col.text-col1 {
+            left: 0;
+        }
+
+        #module07 .slide01 .text-col.text-col2 {
+            right: 30px;
+        }
+
+    #module07 .slide02 .text-col {
+        width: 503px;
+    }
+
+        #module07 .slide02 .text-col strong {
+            color: #000;
+        }
+
+#module07a {
+    text-align: center;
+    color: #000;
+}
+
+    #module07a > div img.icon {
+        padding-top: 180px;
+    }
+
+    #module07a h2 {
+        color: #52B342;
+        font-size: 40px;
+        line-height: 130%;
+        margin: 10px 0;
+    }
+
+    #module07a .disclaimer {
+        font-size: 10px;
+        margin: 90px auto 0;
+        width: 70%;
+    }
+
+
+
+.transcript-trigger {
+    margin: 0 6px 18px 0;
+    text-align: center;
+    position: relative;
+    bottom: 33px;
+    cursor: pointer;
+    color: #52b342;
+    text-transform: uppercase;
+    padding: 0px;
+    border: 2px solid;
+    background-color: #fff;
+    width: 30px;
+    float: right;
+    font-weight: bold;
+}
+
+.transcript-trigger.other {
+    bottom: -16px;
+    left: 44px;
+}
+
+.transcript-modal {
+
+}

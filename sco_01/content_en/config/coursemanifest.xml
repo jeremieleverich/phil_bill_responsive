@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <objectives>
+    <objective id="objective1"><![CDATA[View and complete all tasks in Closing the Loop.]]></objective>
+  </objectives>
+
+  <structure>
+    <module id="module0" objectives="objective1">
+      <title><![CDATA[Closing the Loop]]></title>
+      <page id="closing-the-loop" manualscore="true">
+        <title><![CDATA[Closing the Loop]]></title>
+        <styletitle><![CDATA[Closing the Loop]]></styletitle>
+        <description><![CDATA[Closing the Loop]]></description>
+      </page>
+    </module>
+  </structure>
+</manifest>

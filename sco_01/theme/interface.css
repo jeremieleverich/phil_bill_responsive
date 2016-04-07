@@ -1,0 +1,713 @@
+﻿@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/opensans-regular-webfont.eot');
+    src: url('fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/opensans-regular-webfont.woff') format('woff'), url('fonts/opensans-regular-webfont.ttf') format('truetype'), url('fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('fonts/opensans-bold-webfont.eot');
+    src: url('fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/opensans-bold-webfont.woff') format('woff'), url('fonts/opensans-bold-webfont.ttf') format('truetype'), url('fonts/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('fonts/raleway-regular-webfont.eot');
+    src: url('fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/raleway-regular-webfont.woff') format('woff'), url('fonts/raleway-regular-webfont.ttf') format('truetype'), url('fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('fonts/raleway-light-webfont.eot');
+    src: url('fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/raleway-light-webfont.woff') format('woff'), url('fonts/raleway-light-webfont.ttf') format('truetype'), url('fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('fonts/raleway-bold-webfont.eot');
+    src: url('fonts/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/raleway-bold-webfont.woff') format('woff'), url('fonts/raleway-bold-webfont.ttf') format('truetype'), url('fonts/raleway-bold-webfont.svg#ralewaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #fff;
+    min-width: 1016px;
+    position: relative;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+button {
+    font-family: 'open_sansregular';
+}
+
+strong {
+    font-family: 'ralewaybold';
+    font-weight: normal;
+}
+
+#contentframe {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    min-width: 1016px;
+}
+
+#courseinterface, #menuTopBanner {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    /*margin-left: -17px;*/
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#menuTopBanner {
+    /*background: #fff;
+    height: 50px;
+    overflow: hidden;*/
+    display: none;
+}
+
+#courseinterface {
+    /*border-top: 1px solid #ccc;*/
+    background: #000;
+    display:none;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    #courseinterface {
+        margin-left: 0;
+    }
+}
+
+* {
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#courseinterface > #mainNav, #menuTopBanner > div {
+    width: 999px;
+    margin: 0 auto;
+    padding-left: 17px;
+    position: relative;
+}
+
+#menuTopBanner > div {
+    height: 100%;
+    background: url('images/logo02.png') 27px center no-repeat;
+}
+
+    #menuTopBanner > div h1 {
+        position: relative;
+        top: 15px;
+        left: 195px;
+        display: block;
+        vertical-align: middle;
+        color: #96c700;
+        font-size: 20px;
+        font-weight: 100;
+        font-family: 'open_sansregular';
+    }
+
+#courseinterface > #mainNav {
+    height: 75px;
+}
+
+#coursenavigation > .subNav {
+    background: #dcdddf;
+    padding: 5px 15px 15px 15px;
+    position: absolute;
+    margin: 65px 0 0 25px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    visibility: hidden;
+    overflow: visible;
+    border: 1px solid #cacaca;
+}
+
+body:not(:-moz-handler-blocked) #coursenavigation > .subNav {
+    transform: translateX(3px);
+}
+
+#coursenavigation > .subNav:before {
+    content: '';
+    display: block;
+    position: relative;
+    background: #dcdddf;
+    height: 10px;
+    top: -15px;
+    left: -16px;
+    border: 1px solid #cacaca;
+    border-top: none;
+    border-bottom: none;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body:not(:-moz-handler-blocked) #coursenavigation > .subNav:before {
+    transform: scaleX(0.96) translateX(-3px);
+}
+
+#coursenavigation > li:hover + .subNav, #coursenavigation > .subNav:hover {
+    visibility: visible;
+}
+
+@media only screen and (max-width: 1016px) {
+    #courseinterface > div {
+        margin-left: 0;
+    }
+}
+
+#btn-index, #btn-help, #btn-exit {
+    position: absolute;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    width: 60px;
+    /*height: 16px;*/
+    height: 100%;
+    cursor: pointer;
+    font-size: 12px;
+    color: #fff;
+    /*text-transform: uppercase;*/
+}
+
+#btn-index {
+    right: 130px;
+    top: 32px;
+}
+
+#btn-help {
+    right: 10px;
+    top: 2px;
+    /*top: 25px;
+    border-left: 1px solid #fff;*/
+}
+
+#btn-exit {
+    right: 15px;
+    top: 15px;
+    width: 22px;
+    height: 22px;
+    background: url(images/btn-exit.png);
+    text-indent: -9999px;
+}
+
+#coursenavigation {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    padding: 0 0 0 200px;
+    margin: 0;
+    display: table;
+    background: url('images/biogen-logo.png') no-repeat 10px center;
+}
+
+    #coursenavigation > li {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+    }
+
+.coursesubnavigation {
+    padding: 0;
+    list-style: none;
+}
+
+#coursenavigation > li + li {
+    margin-left: 5px;
+}
+
+.coursesubnavigation > li + li {
+    margin-top: 5px;
+}
+
+#coursenavigation > li > button, .coursesubnavigation > li > button {
+    border: none;
+    background: none;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    line-height: 115%;
+    color: #5b5c5e;
+    text-align: left;
+}
+
+#coursenavigation > li > button {
+    cursor: pointer;
+    min-height: 50px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #FFF;
+}
+
+#coursenavigation > li:last-of-type > button {
+}
+
+.coursesubnavigation > li > button {
+    cursor: pointer;
+}
+
+#coursenavigation > li > button > span {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-bottom: none;
+    padding-right: 22px;
+}
+
+#coursenavigation > li:hover > button.hoverMenu > span, #coursenavigation > li > button.hoverMenu.hover > span {
+    background: #dcdddf;
+    border: 1px solid #cacaca;
+    border-bottom: none;
+}
+
+#coursenavigation > li > button.disabled {
+    color: #999;
+    cursor: default;
+}
+
+#coursenavigation > li > button.completed, .coursesubnavigation > li > button.completed {
+    color: #fff;
+}
+
+#coursenavigation > li > button.selected, .coursesubnavigation > li > button.selected {
+    color: #ffde11;
+}
+
+
+
+
+
+
+
+
+
+
+
+/********************
+     dialog styles 
+*********************/
+#course-dialog-cover {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../theme/images/px-000000-80.png);
+    z-index: 99;
+    overflow: hidden;
+}
+
+#course-dialog, .in-course-dialog {
+    width: 900px;
+    margin: 76px auto 0;
+    color: #000;
+    font-size: 13px;
+    line-height: 140%;
+    position: relative;
+    background: #fff;
+    font-family: 'ralewayregular';
+    /*overflow-y: scroll;*/
+}
+
+    #course-dialog h2, #course-dialog h3 {
+        font-family: Arial, serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    #course-dialog h2 {
+        font-size: 24px;
+        line-height: 110%;
+        font-family: 'ralewaybold';
+        font-weight: normal;
+    }
+
+        #course-dialog h2 span {
+            padding-left: 30px;
+        }
+
+    #course-dialog h3 {
+        font-family: 'ralewaybold';
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 110%;
+        margin-bottom: 12px;
+    }
+
+    #course-dialog #dialog-body {
+        position: relative;
+    }
+
+        #course-dialog #dialog-body p.size-16 {
+            font-size: 16px;
+            line-height: 160%;
+            margin-bottom: 14px;
+        }
+
+        #course-dialog #dialog-body ul {
+            margin-left: 16px;
+        }
+
+        #course-dialog #dialog-body li {
+            margin-bottom: 12px;
+        }
+
+        #course-dialog #dialog-body .dialogcontent {
+            position: relative;
+            padding: 30px;
+            overflow: hidden;
+        }
+
+        #course-dialog #dialog-body p {
+            margin-bottom: 8px;
+        }
+
+    #course-dialog #dialog-button-container button {
+        display: block;
+        position: relative;
+        background: #005baa;
+        color: #fff;
+        font-size: 12px;
+        font-family: 'open_sansbold';
+        width: 131px;
+        height: 30px;
+        margin: 0 0 15px 0;
+        padding: 2px 0 0 10px;
+        text-align: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+        #course-dialog #dialog-button-container button + button {
+            margin-top: 10px;
+        }
+
+    /*Close dialog button*/
+    #course-dialog .close-dialog {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        width: 48px;
+        height: 48px;
+        text-indent: -9999px;
+        background: url(../images/general/close-btn.png);
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    /*Return Dialog*/
+    #course-dialog.returndialog {
+        width: 360px;
+        padding: 25px;
+    }
+
+        #course-dialog.returndialog h2 span, #course-dialog.exitdialog h2 span {
+            padding-left: 0;
+        }
+
+        #course-dialog.returndialog #dialog-body .dialogcontent, #course-dialog.exitdialog #dialog-body .dialogcontent {
+            padding: 0;
+            margin: 25px 0 5px;
+            font-size: 14px;
+        }
+
+    /*Exit Dialog*/
+    #course-dialog.exitdialog {
+        width: 320px;
+        padding: 25px;
+    }
+
+
+    /*Help Dialog*/
+    #course-dialog.helpdialog {
+        margin: 30px auto 0;
+        height: 500px;
+        width: 760px;
+        font-size: 14px;
+        /*position: absolute;
+        top: 0;bottom:0; left:0;right:0;
+        margin: auto;*/
+
+    }
+
+        #course-dialog.helpdialog > h2 {
+            display: none;
+        }
+
+        #course-dialog.helpdialog #dialog-button-container {
+            display: none;
+        }
+
+        #course-dialog.helpdialog .intro-welcome {
+            font-size: 36px;
+            margin: 0 0 36px 0;
+            color: #52B342;
+        }
+
+        #course-dialog.helpdialog .sub-intro {
+            font-size: 24px;
+            margin: 18px 0;
+        }
+
+        #course-dialog.helpdialog li .icon {
+            vertical-align: middle;
+            position: relative;
+            top: -1px;
+        }
+
+        #course-dialog.helpdialog #dialog-body {
+            height: 100%;
+            overflow: hidden;
+            /*overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;*/
+        }
+
+            #course-dialog.helpdialog #dialog-body .dialogcontent {
+                padding: 30px 55px 0 30px;
+            }
+
+            #course-dialog.helpdialog #dialog-body div.part2 {
+                margin-top: 25px;
+                border-top: 1px solid #000;
+                padding-top: 30px;
+                overflow: hidden;
+            }
+
+                #course-dialog.helpdialog #dialog-body div.part2 > div {
+                    width: 47%;
+                    float: left;
+                }
+
+                #course-dialog.helpdialog #dialog-body div.part2 .col1 {
+                    margin-right: 6%;
+                }
+
+                    #course-dialog.helpdialog #dialog-body div.part2 .col1 div {
+                        margin-top: 10px;
+                        margin-bottom: 22px;
+                    }
+
+                        #course-dialog.helpdialog #dialog-body div.part2 .col1 div p {
+                            display: inline;
+                            margin-right: 25px;
+                        }
+
+                        #course-dialog.helpdialog #dialog-body div.part2 .col1 div img {
+                            position: relative;
+                            top: 6px;
+                            margin-right: 10px;
+                        }
+
+                    #course-dialog.helpdialog #dialog-body div.part2 .col1 a {
+                        width: 105px;
+                        font-size: 12px;
+                        display: block;
+                        text-decoration: none;
+                        color: #fff;
+                        background: #005baa url('../images/general/download-workbook-bg.png') no-repeat 10px center;
+                        font-family: 'open_sansbold';
+                        padding: 12px 20px 12px 80px;
+                        margin-top: 30px;
+                    }
+
+                #course-dialog.helpdialog #dialog-body div.part2 .col2 h3.icon-key {
+                    margin-top: 20px;
+                    margin-bottom: 14px;
+                }
+
+                #course-dialog.helpdialog #dialog-body div.part2 .col2 p.icon1 {
+                    padding-top: 3px;
+                }
+
+                #course-dialog.helpdialog #dialog-body div.part2 .col2 p.icon2 {
+                    padding-top: 12px;
+                }
+
+                #course-dialog.helpdialog #dialog-body div.part2 .col2 p.last {
+                    padding-top: 14px;
+                    margin-bottom: 16px;
+                }
+
+                #course-dialog.helpdialog #dialog-body div.part3 {
+                    margin-top: 30px;
+                    border-top: 1px solid #000;
+                    padding-top: 30px;
+                    clear: both;
+                }
+
+                #course-dialog.helpdialog #dialog-body div.part3 div {
+                    
+                    width: 150px;
+                    margin: 0 auto;
+                }
+
+                #course-dialog.helpdialog #dialog-body div.part3 p {
+                    text-align: center;
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                }
+
+
+.icon-description img {
+    width: 48px;
+    height: 44px;
+    background: url('../images/general/read-more.png') no-repeat 0 0;
+    margin-right: 10px;
+    float: left;
+}
+
+.icon-description p {
+    float: left;
+}
+
+.intro-logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.plus {
+    font-family: sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+.inst-text {
+    font-family: 'open_sansregular';
+    font-style: italic;
+    color: #005baa;
+    /*font-weight: 600;*/
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.inst-text img {
+    position: relative;
+    top: 5px;
+    left: 2px;
+}
+
+/* ================= */
+/* Stuff added for Digi-tech */
+
+.cl-icon-explanation {
+    margin-top: 8px;
+}
+
+    .cl-icon,
+    .cl-explanation {
+        display: inline-block;
+         
+    }
+
+    .cl-icon {
+        background: url(../images/general/cl-help.png);
+        width: 60px;
+        height: 60px;
+        position: relative;
+        top: 12px;
+    }
+
+    .cl-explanation {
+        width: 80%;
+        padding-left: 8px;
+    }
+
+.footer {
+    margin-top: 36px;
+}
+
+.module-nav {
+    background-color: #555;
+    position: fixed;
+    color: #fff;
+    top: 0;
+    right: 72px;
+    z-index: 5;
+    cursor: pointer;
+    font-family: 'Open Sans', ralewaylight;
+    font-size: 16px;
+}
+    
+    .module-nav .heading {
+        font-size: 16px;
+        padding: 8px;
+        font-weight: lighter;
+        margin: 0;
+    }
+
+    .module-nav .module-links {
+        padding: 0;
+        margin: 0;
+        list-style: none; 
+        width: 220px;
+        right: 0;
+        white-space: nowrap;
+        position: absolute;
+        border: 2px solid #555;
+
+    }
+
+    .module-nav .module-link {
+        padding: 8px;
+        background-color: #89D8E3;
+        color: #4C4C4C;
+        text-overflow: ellipsis;
+        display: block;
+        overflow:hidden;
+        text-overflow:ellipsis;
+       
+    }
+
+     .module-nav .module-link:hover {
+        background-color: #B8E7EE;
+ 
+    }
+
+    .module-link + .module-link {
+        border-top: 1px solid white; 
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .module-link.disabled {
+       background-color: #B8E7EE;
+        cursor: default;
+        color: #aaa;
+        
+    }
+
+    .module-link.disabled:hover {
+        background-color: #B8E7EE !important;
+        
+    }
+
+    .disabled:hover {
+        background-color: #333;
+
+    }
+
